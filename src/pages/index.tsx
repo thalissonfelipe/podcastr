@@ -51,7 +51,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                   objectFit="cover"
                 />
                 <div className={styles.episodeDetails}>
-                  <Link href={`episodes/${episode.id}`}>
+                  <Link href={`/episodes/${episode.id}`}>
                     <a>{episode.title}</a>
                   </Link>
                   <p>{episode.members}</p>
@@ -71,12 +71,14 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
           <h2>Todos episódios</h2>
           <table cellSpacing={0}>
             <thead>
-              <th></th>
-              <th>Podcast</th>
-              <th>Integrantes</th>
-              <th>Data</th>
-              <th>Duração</th>
-              <th></th>
+              <tr>
+                <th></th>
+                <th>Podcast</th>
+                <th>Integrantes</th>
+                <th>Data</th>
+                <th>Duração</th>
+                <th></th>
+              </tr>
             </thead>
             <tbody>
               {allEpisodes.map((episode, index) => {
@@ -92,7 +94,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                       />
                     </td>
                     <td>
-                      <Link href={`episodes/${episode.id}`}>
+                      <Link href={`/episodes/${episode.id}`}>
                         <a>{episode.title}</a>
                       </Link>
                     </td>
