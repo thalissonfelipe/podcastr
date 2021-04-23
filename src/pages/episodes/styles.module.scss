@@ -83,3 +83,24 @@
         }
     }
 }
+
+@media (max-width: 38.75rem) { // 620px
+    .episode {
+        header {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                & + span {
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-top: 0.5rem;
+
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}

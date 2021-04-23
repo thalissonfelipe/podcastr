@@ -46,7 +46,7 @@ Para rodar o projeto é necessário executar dois serviços:
 
 ## TODO
 
-- [ ] Adicionar responsividade
+- [x] Adicionar responsividade
 - [ ] Adicionar versão PWA (next-pwa)
 - [ ] Adicionar Tema Dark
 - [ ] Deploy (next e API fake)

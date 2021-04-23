@@ -18,3 +18,19 @@
         text-transform: capitalize;
     }
 }
+
+@media (max-width: 38.75rem) { // 620px
+    .headerContainer {
+        padding: 1rem;
+
+        p {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 35rem) { // 560px
+    .headerContainer {
+        padding: 0 1rem;
+    }
+}

@@ -9,7 +9,7 @@ import { api } from '../../services/api';
 import { usePlayer } from '../../contexts/PlayerContext';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 
-import styles from './episode.module.scss';
+import styles from './styles.module.scss';
 
 type Episode = {
   id: string;

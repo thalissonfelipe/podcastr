@@ -5,3 +5,13 @@
         flex: 1;
     }
 }
+
+@media (max-width: 87.5rem) { // 1400px
+    .wrapper {
+        flex-direction: column-reverse;
+
+        main {
+            flex: unset;
+        }
+    }
+}

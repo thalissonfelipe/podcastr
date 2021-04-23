@@ -130,3 +130,40 @@
         }
     }
 }
+
+@media (max-width: 87.5rem) { // 1400px
+    .playerContainer {
+        width: 100%;
+        height: unset;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .emptyPlayer {
+        height: unset;
+        padding: 2rem;
+    }
+
+    .buttons {
+        margin-top: 1rem;
+    }
+
+    .currentEpisode {
+        img {
+            width: 20rem;
+            height: 10rem;
+        }
+    }
+}
+
+@media (max-width: 35rem) { // 560px
+    .currentEpisode {    
+        img, span {
+            display: none;
+        }
+    
+        strong {
+            margin-top: unset;
+        }
+    }
+}
