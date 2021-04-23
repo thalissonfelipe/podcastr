@@ -10,7 +10,9 @@ type Episode = {
   thumbnail: string;
   members: string;
   publishedAt: string;
+  duration: number;
   durationAsString: string;
+  url: string;
 }
 
 type CardProps = {
