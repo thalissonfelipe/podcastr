@@ -30,6 +30,12 @@ Clone este repositório e na pasta raiz execute o seguinte comando:
 yarn install
 ```
 
+## Variáveis de ambiente
+
+Antes de executar o projeto, é necessário configurar as variáveis de ambiente. Para isso, criei um arquivo na raiz do projeto chamado `.env.local`. Utilize o arquivo `.env.template` como template.
+
+A variável `API_URI` é a URI do json-server utilizado para criar uma API fake.
+
 ## Executar
 
 Para rodar o projeto é necessário executar dois serviços:
@@ -44,9 +50,17 @@ Para rodar o projeto é necessário executar dois serviços:
     yarn server
     ```
 
+## Deploy
+
+O deploy do projeto foi feito de duas maneiras.
+
+1. Utilizando o Vercel para fazer o deploy do projeto next, onde você pode acessar por meio deste link: https://podcastr-thalissonfelipe.vercel.app/.
+
+2. Utilizando o heroku para fazer o deploy da API fake criada com o json-server, no qual é possível acessar por meio deste link: https://podcastr-fakeapi.herokuapp.com/. Criei uma branch chamada json-server para subir esse serviço separado do next.js.
+
 ## TODO
 
 - [x] Adicionar responsividade
 - [ ] Adicionar versão PWA (next-pwa)
 - [ ] Adicionar Tema Dark
-- [ ] Deploy (next e API fake)
+- [x] Deploy (next e API fake)
